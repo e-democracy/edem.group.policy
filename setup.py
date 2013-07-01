@@ -32,9 +32,14 @@ setup(name='edem.group.policy',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'gs.group.home',
+        'gs.group.privacy',
         'gs.skin.ogn.edem',
         'gs.viewlet',
-        'gs.group.privacy',
+        'Products.CustomUserFolder',
+        'Products.XWFCore',
+        'zope.cachedescriptors',
+        'zope.component',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
