@@ -5,7 +5,7 @@
 
   <browser:viewlet name="gs-group-home-privacy"
     manager="gs.shim.group.home.interfaces.IGroupHomepageInfo"
-    template="browser/templates/privacy.pt"
+    template="browser/templates/policy_tab.pt"
     class=".policytab.PolicyTab"
     permission="zope2.View"
     weight="3"
