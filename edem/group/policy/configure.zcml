@@ -2,5 +2,14 @@
 <configure xmlns="http://namespaces.zope.org/zope"
   xmlns:browser="http://namespaces.zope.org/browser"
   xmlns:five="http://namespaces.zope.org/five">
+
+  <browser:viewlet name="gs-group-home-privacy"
+    manager="gs.shim.group.home.interfaces.IGroupHomepageInfo"
+    template="browser/templates/privacy.pt"
+    class=".policytab.PolicyTab"
+    permission="zope2.View"
+    weight="3"
+    title="Policies"
+    layer="gs.skin.ogn.edem.interfaces.IEDemLayer" />
 </configure>
 
