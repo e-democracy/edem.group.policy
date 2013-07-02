@@ -13,6 +13,6 @@
      names and no name calling. Participation will be limited for those found
      violating the rules.</p>
   
-  <p><a tal:attributes="href view/participationCoach/url | string:[Participation Coach]"><span tal:replace="view/participationCoach/name | string:[PARTICIPATION COACH]"/></a> is the volunteer Forum Manager and is responsible for facilitating this forum and enforcing the rules.</p>
+  <p><a tal:attributes="href view/participationCoach/url | string:[Participation Coach]"><span tal:replace="view/participationCoach/name | string:[PARTICIPATION COACH]"/></a> is the volunteer Forum Manager and is responsible for facilitating this forum and enforcing the rules. <tal:block condition="python: hasattr(context,'fm_email_address')">The Forum Manager can be emailed at <a href="#" tal:attributes="href string:mailto:${context/fm_email_address}"><span id="fm_email_address" tal:replace="context/fm_email_address">email address</span></a></tal:block></p>
 </div>
 
